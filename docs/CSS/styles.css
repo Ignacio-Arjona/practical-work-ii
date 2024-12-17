@@ -9,7 +9,7 @@
 body{
     display: flex;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: black;
 }
 .profile{
     text-align: center;
