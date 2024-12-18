@@ -8,7 +8,7 @@
 }
 body{
     display: flex;
-    height: 100vh;
+    height: 550px;
     background-color: #002550;
 }
 #sidebarControl{
@@ -19,22 +19,28 @@ body{
     margin-bottom: 25px;
 }
 #sidebarControl:not(:checked) ~ .sidebar .profile img{
+    display: block;
     width: 80px;
     height: 80px;
     border-radius: 100%;
-    margin-left: 80px;
+    margin-left: 85px;
     margin-top: -20px;
 }
 #sidebarControl:not(:checked) ~ .sidebar .profile h3{
+    display: block;
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
     color: #fefefe;
 }
 #sidebarControl:not(:checked) ~ .sidebar .profile p{
+    display: block;
     margin-top: 10px;
     font-size: 0.9rem;
     color: #c8c8c8;
+}
+#sidebarControl:checked ~ .sidebar .profile{
+    display: none;
 }
 .menuitems{
     display: block;
@@ -77,6 +83,11 @@ body{
 }
 #sidebarControl:not(:checked) ~ .sidebar nav ul{
     width: 100%;
+    opacity: 100%;
+}
+#sidebarControl:checked ~ .sidebar nav ul{
+    padding: 175px;
+    opacity: 50%;
 }
 #sidebarControl:not(:checked) ~ .sidebar nav ul li{
     width: 100%;
@@ -89,17 +100,28 @@ body{
     align-items: center;
     transition: 0.3s;
 }
+#sidebarControl:checked ~ .sidebar nav ul li a{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+#sidebarControl:checked ~ .sidebar nav ul li a p{
+    display: none;
+}
 #sidebarControl:not(:checked) ~ .sidebar nav ul li a img{
     margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+#sidebarControl:checked ~ .sidebar nav ul li a img{
+    display: block;
     width: 25px;
     height: 25px;
 }
 #sidebarControl:not(:checked) ~ .sidebar nav ul li a:hover{
     background-color: #002550;
     transition: 0.3s;
-}
-#sidebarControl:checked ~ .sidebar nav *, .profile *{
-    display: none;
 }
 #sidebarControl:not(:checked) ~ .sidebar *{
     display: block;
