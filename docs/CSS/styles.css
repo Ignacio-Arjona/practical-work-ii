@@ -20,6 +20,7 @@ body{
     height: 80px;
     border-radius: 100%;
     margin-left: 80px;
+    margin-top: -20px;
 }
 .profile h3{
     margin-top: 10px;
@@ -43,12 +44,6 @@ body{
 }
 .sidebar:hover{
     width: 250px;
-    background-color: #000025;
-    color: #fefefe;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
 }
 .sidebar:hover nav ul{
     width: 100%;
@@ -73,8 +68,26 @@ body{
     background-color: #002550;
     transition: background 0.3s;
 }
-.sidebar *{
+nav *, .profile *{
     display: none;
+}
+.menuitems{
+    display: block;
+    opacity: 50%;
+    transition: 0.3s;
+}
+.menuitems:hover{
+    opacity: 100%;
+    transition: 0.3s;
+}
+.menuitems img{
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 25%;
+}
+.sidebar:hover .menuitems{
+    margin-left: -200px;
 }
 .sidebar:hover *{
     display: block;
