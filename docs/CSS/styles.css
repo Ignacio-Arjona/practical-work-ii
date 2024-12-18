@@ -11,70 +11,36 @@ body{
     height: 100vh;
     background-color: #002550;
 }
-.profile{
+#sidebarControl{
+    display: none;
+}
+#sidebarControl:not(:checked) ~ .sidebar .profile{
     text-align: center;
     margin-bottom: 25px;
 }
-.profile img{
+#sidebarControl:not(:checked) ~ .sidebar .profile img{
     width: 80px;
     height: 80px;
     border-radius: 100%;
     margin-left: 80px;
     margin-top: -20px;
 }
-.profile h3{
+#sidebarControl:not(:checked) ~ .sidebar .profile h3{
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
     color: #fefefe;
 }
-.profile p{
+#sidebarControl:not(:checked) ~ .sidebar .profile p{
     margin-top: 10px;
     font-size: 0.9rem;
     color: #c8c8c8;
-}
-.sidebar{
-    width: 50px;
-    background-color: #000025;
-    color: #fefefe;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-}
-.sidebar:hover{
-    width: 250px;
-}
-.sidebar:hover nav ul{
-    width: 100%;
-}
-.sidebar:hover nav ul li{
-    width: 100%;
-}
-.sidebar:hover nav ul li a{
-    color: #fefefe;
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    transition: background 0.3s;
-}
-.sidebar:hover nav ul li a img{
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-}
-.sidebar:hover nav ul li a:hover{
-    background-color: #002550;
-    transition: background 0.3s;
-}
-nav *, .profile *{
-    display: none;
 }
 .menuitems{
     display: block;
     opacity: 50%;
     transition: 0.3s;
+    margin-top: -5px;
 }
 .menuitems:hover{
     opacity: 100%;
@@ -86,9 +52,55 @@ nav *, .profile *{
     border-style: solid;
     border-radius: 25%;
 }
-.sidebar:hover .menuitems{
+#sidebarControl:not(:checked) ~ .sidebar .menuitems{
     margin-left: -200px;
 }
-.sidebar:hover *{
+#sidebarControl:checked ~ .sidebar{
+    width: 50px;
+    background-color: #000025;
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    transition: 0.3s;
+}
+#sidebarControl:not(:checked) ~ .sidebar{
+    width: 250px;
+    background-color: #000025;
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    transition: 0.3s;
+}
+#sidebarControl:not(:checked) ~ .sidebar nav ul{
+    width: 100%;
+}
+#sidebarControl:not(:checked) ~ .sidebar nav ul li{
+    width: 100%;
+}
+#sidebarControl:not(:checked) ~ .sidebar nav ul li a{
+    color: #fefefe;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+#sidebarControl:not(:checked) ~ .sidebar nav ul li a img{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+#sidebarControl:not(:checked) ~ .sidebar nav ul li a:hover{
+    background-color: #002550;
+    transition: 0.3s;
+}
+#sidebarControl:checked ~ .sidebar nav *, .profile *{
+    display: none;
+}
+#sidebarControl:not(:checked) ~ .sidebar *{
     display: block;
 }
