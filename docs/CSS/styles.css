@@ -61,13 +61,7 @@ body{
 }
 #sidebarControl:checked ~ .sidebar .menuitems{
     margin-left: -200px;
-    opacity: 100%;
 }
-#sidebarControl:checked ~ .sidebar .menuitems:hover{
-    margin-left: -200px;
-    opacity: 50%;
-}
-
 #sidebarControl:not(:checked) ~ .sidebar{
     width: 50px;
     background-color: #000025;
@@ -105,9 +99,10 @@ body{
     display: flex;
     align-items: center;
     transition: 0.3s;
+    opacity: 50%;
 }
 #sidebarControl:checked ~ .sidebar nav ul li a:hover{
-    opacity: 50%;
+    opacity: 100%;
 }
 #sidebarControl:not(:checked) ~ .sidebar nav ul li a{
     padding: 10px 20px;
