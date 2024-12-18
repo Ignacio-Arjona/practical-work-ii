@@ -9,32 +9,32 @@
 body{
     display: flex;
     height: 100vh;
-    background-color: black;
+    background-color: #002550;
 }
 .profile{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .profile img{
     width: 80px;
     height: 80px;
-    border-radius: 50%;
-    background-color: #ccc;
+    border-radius: 100%;
 }
 .profile h3{
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+    color: #fefefe;
 }
 .profile p{
     margin-top: 10px;
     font-size: 0.9rem;
-    color: #b0c4de;
+    color: #c8c8c8;
 }
 .sidebar{
     width: 250px;
-    background-color: #002855;
-    color: #fff;
+    background-color: #000025;
+    color: #fefefe;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,8 +47,8 @@ body{
     width: 100%;
 }
 .sidebar nav ul li a{
-    color: #fff;
-    font-size: 1rem;
+    color: #fefefe;
+    font-size: 0.9rem;
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -60,5 +60,6 @@ body{
     height: 25px;
 }
 .sidebar nav ul li a:hover{
-    background-color: #004080;
+    background-color: #002550;
+    transition: background 0.3s;
 }
