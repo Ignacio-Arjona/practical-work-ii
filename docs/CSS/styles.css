@@ -8,7 +8,7 @@
 }
 body{
     display: flex;
-    height: 713px;
+    height: 100vh;
     background-color: #002550;
 }
 #sidebarControl{
@@ -37,7 +37,8 @@ body{
     display: block;
     margin-top: 10px;
     font-size: 0.9rem;
-    color: #c8c8c8;
+    color: #fefefe;
+    opacity: 50%;
 }
 #sidebarControl:not(:checked) ~ .sidebar .profile *{
     display: none;
@@ -60,7 +61,13 @@ body{
 }
 #sidebarControl:checked ~ .sidebar .menuitems{
     margin-left: -200px;
+    opacity: 100%;
 }
+#sidebarControl:checked ~ .sidebar .menuitems:hover{
+    margin-left: -200px;
+    opacity: 50%;
+}
+
 #sidebarControl:not(:checked) ~ .sidebar{
     width: 50px;
     background-color: #000025;
@@ -86,7 +93,7 @@ body{
     opacity: 100%;
 }
 #sidebarControl:not(:checked) ~ .sidebar nav ul{
-    padding: 175px;
+    padding: 75px;
 }
 #sidebarControl:checked ~ .sidebar nav ul li{
     width: 100%;
@@ -98,6 +105,9 @@ body{
     display: flex;
     align-items: center;
     transition: 0.3s;
+}
+#sidebarControl:checked ~ .sidebar nav ul li a:hover{
+    opacity: 50%;
 }
 #sidebarControl:not(:checked) ~ .sidebar nav ul li a{
     padding: 10px 20px;
