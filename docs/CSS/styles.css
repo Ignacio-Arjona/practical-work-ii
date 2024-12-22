@@ -27,20 +27,20 @@ body{
     width: 6.25vw;
     height: 6.25vw;
     border-radius: 100%;
-    margin-left: 6.375vw;
+    margin: auto;
 }
 #sidebarControl:checked ~ .sidebar .profile h3{
     display: block;
     margin-top: 1.75vh;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #fefefe;
+    color: white;
 }
 #sidebarControl:checked ~ .sidebar .profile p{
     display: block;
     margin-top: 1.75vh;
     font-size: 0.9rem;
-    color: #fefefe;
+    color: white;
     opacity: 50%;
 }
 #sidebarControl:not(:checked) ~ .sidebar .profile *{
@@ -64,13 +64,13 @@ body{
     border-radius: 25%;
 }
 #sidebarControl:checked ~ .sidebar .menuitems{
-    margin-left: -15.5vw;
+    margin-left: -15vw;
 }
 /*Sidebar*/
 #sidebarControl:not(:checked) ~ .sidebar{
     width: 4vw;
     background-color: #000025;
-    color: #fefefe;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +82,7 @@ body{
 #sidebarControl:checked ~ .sidebar{
     width: 19vw;
     background-color: #000025;
-    color: #fefefe;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,7 +93,7 @@ body{
     opacity: 100%;
 }
 #sidebarControl:checked ~ .sidebar nav ul li a{
-    color: #fefefe;
+    color: white;
     font-size: 0.9rem;
     padding: 1.75vh;
     display: flex;
@@ -138,28 +138,96 @@ body{
 /*End of Side Drop Down Menu*/
 
 /*Start of Content*/
-#sidebarControl:not(:checked) ~ .box{
+.content-box{
+    display: flex;
+    flex-direction: column;
+}
+#sidebarControl:not(:checked) ~ .content-box .box{
     background-color: #000025;
-    opacity: 100%;
     height: 9vh;
+    line-height: 9vh;
     width: 96vw;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     transition: 0.3s;
 }
-#sidebarControl:checked ~ .box{
+#sidebarControl:checked ~ .content-box .box{
     background-color: #000025;
-    opacity: 100%;
     height: 9vh;
+    line-height: 9vh;
     width: 81vw;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     transition: 0.3s;
 }
-.box h3{
-    color: #fefefe;
+.content-box .box h3{
+    color: white;
     opacity: 50%;
-    text-align: center;
     font-size: 1.2rem;
-    margin-left: 2vh;;
+    margin: auto;
+    align-items: center;
+}
+.contact-form{
+    height: 85vh;
+    line-height: 10vh;
+    width: calc(40vw + 7.5vh);
+    border-radius: 2vh / 2vh;
+    background-color: white;
+    opacity: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.contact-form input{
+    margin-top: 2.5vh;
+    padding-left: 1.5vh;
+}
+.contact-form textarea{
+    margin-top: 2.5vh;
+    width: calc(40vw + 2.5vh);
+    height: 27.5vh;
+    resize: none;
+    padding: 1.5vh;
+}
+.contact-form .column{
+    display: flex;
+    flex-direction: row;
+}
+.contact-form .column input{
+    width: 20vw;
+    margin-right: 1.25vh;
+    margin-left: 1.25vh;
+}
+.contact-form input{
+    width: calc(40vw + 2.5vh);
+    height: 8vh;
+}
+.contact-form .row input{
+    width: 20vw;
+    height: 8vh;
+}
+.contact-form input[type=submit]:not(:active){
+    width: calc(40vw + 2.5vh);
+    height: 8vh;
+    background-color: #002550;
+    border-radius: 1vh / 1vh;
+    margin-top: 2.5vh;
+    line-height: 8vh;
+    color: white;
+    font-size: 3vh;
+    border: none;
+}
+.contact-form input[type=submit]:hover{
+    background-color: #000025;
+}
+.contact-form input[type=submit]:hover:active{
+    width: calc(40vw + 2.5vh);
+    height: 8vh;
+    background-color: black;
+    border-radius: 1vh / 1vh;
+    margin-top: 2.5vh;
+    line-height: 8vh;
+    color: white;
+    font-size: 3vh;
 }
