@@ -35,14 +35,14 @@ a{
 #sidebarControl:checked ~ .sidebar .profile h3{
     display: block;
     margin-top: 1.75vh;
-    font-size: 1.2rem;
+    font-size: min(1.5vw, 3.5vh);
     font-weight: bold;
     color: white;
 }
 #sidebarControl:checked ~ .sidebar .profile p{
     display: block;
     margin-top: 1.75vh;
-    font-size: 0.9rem;
+    font-size: min(2.625vh, 1.125vw);
     color: white;
     opacity: 50%;
 }
@@ -97,7 +97,7 @@ a{
 }
 #sidebarControl:checked ~ .sidebar nav ul li a{
     color: white;
-    font-size: 0.9rem;
+    font-size: min(2.625vh, 1.125vw);
     padding: 1.75vh;
     display: flex;
     align-items: center;
@@ -167,7 +167,7 @@ a{
 .content-box .box h3{
     color: white;
     opacity: 50%;
-    font-size: 1.2rem;
+    font-size: min(1.5vw, 3.5vh);
     margin: auto;
     text-align: center;
 }
@@ -222,7 +222,7 @@ a{
     margin-top: 3vh;
     line-height: 8vh;
     color: white;
-    font-size: 3vh;
+    font-size: min(3vh, 1.3vw);
     border: none;
 }
 .contact-form input[type=submit]:hover{
@@ -236,7 +236,7 @@ a{
     margin-top: 3vh;
     line-height: 8vh;
     color: white;
-    font-size: 3vh;
+    font-size: min(3vh, 1.3vw);
 }
 /*End of Contact*/
 
@@ -259,7 +259,7 @@ a{
     font-weight: bold;
 }
 .main-box p{
-    font-size: 0.9rem;
+    font-size: min(2.625vh, 1.125vw);
     text-align: center;
 }
 .heading{
