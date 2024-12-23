@@ -12,6 +12,9 @@ body{
     width: 100vw;
     background-color: #002550;
 }
+a{
+    text-decoration: none;
+}
 
 /*Start of Side Drop Down Menu*/
 #sidebarControl{
@@ -138,6 +141,7 @@ body{
 /*End of Side Drop Down Menu*/
 
 /*Start of Content*/
+/*Start of Upper "Menu"*/
 .content-box{
     display: flex;
     flex-direction: column;
@@ -165,10 +169,13 @@ body{
     opacity: 50%;
     font-size: 1.2rem;
     margin: auto;
-    align-items: center;
+    text-align: center;
 }
+/*End of Upper "Menu"*/
+
+/*Start of Contact*/
 .contact-form{
-    height: 85vh;
+    height: 86vh;
     line-height: 10vh;
     width: calc(40vw + 7.5vh);
     border-radius: 2vh / 2vh;
@@ -212,7 +219,7 @@ body{
     height: 8vh;
     background-color: #002550;
     border-radius: 1vh / 1vh;
-    margin-top: 2.5vh;
+    margin-top: 3vh;
     line-height: 8vh;
     color: white;
     font-size: 3vh;
@@ -226,8 +233,66 @@ body{
     height: 8vh;
     background-color: black;
     border-radius: 1vh / 1vh;
-    margin-top: 2.5vh;
+    margin-top: 3vh;
     line-height: 8vh;
     color: white;
     font-size: 3vh;
+}
+/*End of Contact*/
+
+/*Start of Main Box*/
+.main-box{
+    height: 86vh;
+    line-height: 10vh;
+    width: calc(81vw - 5vh);
+    border-radius: 2vh / 2vh;
+    background-color: white;
+    opacity: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    line-height: normal;
+}
+.main-box .first-p p{
+    margin-top: 2.5vh;
+    font-weight: bold;
+}
+.main-box p{
+    font-size: 0.9rem;
+    text-align: center;
+}
+.heading{
+    width: calc(81vw - 5vh);
+    border: transparent;
+    text-align: center;
+    align-items: center;
+    margin-top: 2.5vh;
+    margin-bottom: 1vh;
+}
+.heading .links{
+    background-color: #000012;
+    width: 10vw;
+    height: 5vh;
+    margin-left: calc(35.5vw - 5vh);
+    border-radius: 1vh / 1vh;
+    transition: 0.3s;
+}
+.heading .links:hover{
+    background-color: #002550;
+    transition: 0.3s;
+}
+.heading .links a p{
+    line-height: 5vh;
+    color: white;
+    font-weight: bold;
+}
+.main-box hr{
+    display: block;
+    width: calc(81vw - 5vh);
+    border-bottom: 1px solid #000012;
+    margin-left: calc(-35.5vw + 5vh);
+    margin-top: 2.5vh;
+    position: absolute;
+    z-index: -1;
 }
