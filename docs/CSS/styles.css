@@ -390,9 +390,27 @@ html::-webkit-scrollbar{
     position: absolute;
     z-index: -1;
 }
+#subjects:not(:checked) ~ .sidebar{
+    height: 161vh;
+}
 #subjects:checked ~ .sidebar{
-    height: 275vh;
+    height: 247.5vh;
 }
 #subjects2:checked ~ .sidebar{
-    height: 275vh;
+    height: 285.5vh;
+}
+#subjects3:checked ~ .sidebar{
+    height: 178.5vh;
+}
+#subjects:checked ~ #subjects2:checked ~ .sidebar{
+    height: 372vh;
+}
+#subjects:checked ~ #subjects3:checked ~ .sidebar{
+    height: 265vh;
+}
+#subjects2:checked ~ #subjects3:checked ~ .sidebar{
+    height: 303vh;
+}
+#subjects:checked ~ #subjects2:checked ~ #subjects3:checked ~ .sidebar{
+    height: 389.5vh;
 }
