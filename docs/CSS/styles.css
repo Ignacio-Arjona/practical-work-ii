@@ -314,6 +314,11 @@ html::-webkit-scrollbar{
     position: absolute;
     z-index: -1;
 }
+.main-box img{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 100%;
+}
 /*Start of Degree Subjects Expandable Menu*/
 #subjects{
     display: none;
