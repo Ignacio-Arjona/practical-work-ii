@@ -277,6 +277,8 @@ html::-webkit-scrollbar{
 .main-box p{
     font-size: min(2.625vh, 1.125vw);
     text-align: center;
+    margin-left: 2vh;
+    margin-right: 2vh;
 }
 .heading{
     width: calc(81vw - 5vh);
