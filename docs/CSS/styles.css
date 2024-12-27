@@ -26,6 +26,9 @@ a{
 html::-webkit-scrollbar{
     display: none; /*Chrome, Safari and Opera*/
 }
+.bold{
+    text-decoration:double;
+}
 /*Start of Side Drop Down Menu*/
 #sidebarControl{
     display: none;
@@ -120,8 +123,8 @@ html::-webkit-scrollbar{
 }
 #sidebarControl:checked ~ .sidebar nav ul li a img{
     margin-right: 0.75vw;
-    width: 2vw;
-    height: 4.5vh;
+    width: min(4.5vh, 2vw);
+    height: min(4.5vh, 2vw);
 }
 #sidebarControl:not(:checked) ~ .sidebar nav ul{
     padding: 10vh;
@@ -142,8 +145,8 @@ html::-webkit-scrollbar{
 }
 #sidebarControl:not(:checked) ~ .sidebar nav ul li a img{
     display: block;
-    width: 2vw;
-    height: 4.5vh;
+    width: min(4.5vh, 2vw);
+    height: min(4.5vh, 2vw);
 }
 .sidebar nav ul li a:hover{
     background-color: #002550;
@@ -352,6 +355,11 @@ html::-webkit-scrollbar{
 .subject-display a{
     color: black;
     text-decoration: underline;
+    transition: 0.3s;
+}
+.subject-display a:hover{
+    opacity: 50%;
+    transition: 0.3s;
 }
 .subject-title{
     background-color: #000012;
@@ -504,4 +512,16 @@ html::-webkit-scrollbar{
 }
 #sizeoffce:not(:checked) ~ .sidebar{
     height: 228vh;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    width: calc(81vw - 5vh);
+    margin: 2.5vh;
+}
+.social-media-box a img{
+    height: 15vh;
+    width: 15vh;
+    margin-left: 10.4vh;
+    margin-right: 10.4vh;
 }
