@@ -520,8 +520,28 @@ html::-webkit-scrollbar{
     margin: 2.5vh;
 }
 .social-media-box a img{
-    height: 15vh;
-    width: 15vh;
-    margin-left: 10.4vh;
-    margin-right: 10.4vh;
+    height: min(15vh, 6.5vw);
+    width: min(15vh, 6.5vw);
+    margin-left: min(4.5vw, 10.4vh);
+    margin-right: min(4.5vw, 10.4vh);
+    margin-top: 2.5vh;
+}
+.profile-pictures{
+    display: flex;
+    flex-direction: row;
+    width: calc(81vw - 5vh);
+    margin: 2.5vh;
+}
+.profile-pictures-box img{
+    height: min(45vh, 19.5vw);
+    width: min(45vh, 19.5vw);
+    margin-left: min(9.5vw, 21.96vh);
+    margin-right: min(9.5vw, 21.96vh);
+    margin-top: 2.5vh;
+}
+#sizeofabout{
+    display: none;
+}
+#sizeofabout:not(:checked) ~ .sidebar{
+    height: 347vh;
 }
