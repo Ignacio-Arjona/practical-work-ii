@@ -109,7 +109,7 @@ html::-webkit-scrollbar{
 #sidebarControl:checked ~ .sidebar nav ul li a{
     color: white;
     font-size: min(2.625vh, 1.125vw);
-    padding: 1.75vh;
+    padding: 1.25vh;
     display: flex;
     align-items: center;
     transition: 0.3s;
@@ -124,7 +124,7 @@ html::-webkit-scrollbar{
     height: 4.5vh;
 }
 #sidebarControl:not(:checked) ~ .sidebar nav ul{
-    padding: 15vh;
+    padding: 10vh;
 }
 #sidebarControl:not(:checked) ~ .sidebar nav ul li a{
     padding: 1.75vh 1vw;
@@ -320,7 +320,7 @@ html::-webkit-scrollbar{
     border-radius: 100%;
 }
 /*Start of Degree Subjects Expandable Menu*/
-#subjects1,#subjects2,#subjects3,#subjects4,#subjects5,{
+#subjects1,#subjects2,#subjects3,#subjects4,#subjects5{
     display: none;
 }
 .hover-effect{
