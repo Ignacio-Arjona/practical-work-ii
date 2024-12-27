@@ -320,13 +320,7 @@ html::-webkit-scrollbar{
     border-radius: 100%;
 }
 /*Start of Degree Subjects Expandable Menu*/
-#subjects{
-    display: none;
-}
-#subjects2{
-    display: none;
-}
-#subjects3{
+#subjects1,#subjects2,#subjects3,#subjects4,#subjects5,{
     display: none;
 }
 .hover-effect{
@@ -337,7 +331,7 @@ html::-webkit-scrollbar{
     opacity: 50%;
     transition: 0.3s;
 }
-#subjects:checked ~ .content-box .main-box .check1 .subject-display{
+#subjects1:checked ~ .content-box .main-box .check1 .subject-display{
     display: block;
 }
 #subjects2:checked ~ .content-box .main-box .check2 .subject-display{
@@ -346,8 +340,18 @@ html::-webkit-scrollbar{
 #subjects3:checked ~ .content-box .main-box .check3 .subject-display{
     display: block;
 }
+#subjects4:checked ~ .content-box .main-box .check4 .subject-display{
+    display: block;
+}
+#subjects5:checked ~ .content-box .main-box .check5 .subject-display{
+    display: block;
+}
 .subject-display{
     display: none;
+}
+.subject-display a{
+    color: black;
+    text-decoration: underline;
 }
 .subject-title{
     background-color: #000012;
@@ -397,27 +401,107 @@ html::-webkit-scrollbar{
     position: absolute;
     z-index: -1;
 }
-#subjects:not(:checked) ~ .sidebar{
-    height: 161vh;
+/*Start of Sizing for Degree*/
+#subjects1:not(:checked) ~ .sidebar{
+    height: 183.5vh;
 }
-#subjects:checked ~ .sidebar{
-    height: 247.5vh;
+#subjects1:checked ~ .sidebar{
+    height: 250vh;
 }
 #subjects2:checked ~ .sidebar{
-    height: 285.5vh;
+    height: 250vh;
 }
 #subjects3:checked ~ .sidebar{
-    height: 178.5vh;
+    height: 253vh;
 }
-#subjects:checked ~ #subjects2:checked ~ .sidebar{
-    height: 372vh;
+#subjects4:checked ~ .sidebar{
+    height: 250vh;
 }
-#subjects:checked ~ #subjects3:checked ~ .sidebar{
-    height: 265vh;
+#subjects5:checked ~ .sidebar{
+    height: 241.5vh;
+}
+#subjects1:checked ~ #subjects2:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh);
+}
+#subjects1:checked ~ #subjects3:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 69.5vh);
+}
+#subjects1:checked ~ #subjects4:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh);
+}
+#subjects1:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 58vh);
 }
 #subjects2:checked ~ #subjects3:checked ~ .sidebar{
-    height: 303vh;
+    height: calc(183.5vh + 66.5vh + 69.5vh);
 }
-#subjects:checked ~ #subjects2:checked ~ #subjects3:checked ~ .sidebar{
-    height: 389.5vh;
+#subjects2:checked ~ #subjects4:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh);
+}
+#subjects2:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 58vh);
+}
+#subjects3:checked ~ #subjects4:checked ~ .sidebar{
+    height: calc(183.5vh + 69.5vh + 66.5vh);
+}
+#subjects3:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 69.5vh + 58vh);
+}
+#subjects4:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 58vh);
+}
+#subjects1:checked ~ #subjects2:checked ~ #subjects3:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh + 69.5vh);
+}
+#subjects1:checked ~ #subjects2:checked ~ #subjects4:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh + 66.5vh);
+}
+#subjects1:checked ~ #subjects2:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh + 58vh);
+}
+#subjects1:checked ~ #subjects3:checked ~ #subjects4:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh + 69.5vh);
+}
+#subjects1:checked ~ #subjects3:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 58vh + 69.5vh);
+}
+#subjects1:checked ~ #subjects4:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh + 58vh);
+}
+#subjects2:checked ~ #subjects3:checked ~ #subjects4:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh + 69.5vh);
+}
+#subjects2:checked ~ #subjects3:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 58vh + 69.5vh);
+}
+#subjects2:checked ~ #subjects4:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh + 58vh);
+}
+#subjects3:checked ~ #subjects4:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 58vh + 66.5vh + 69.5vh);
+}
+#subjects1:checked ~ #subjects2:checked ~ #subjects3:checked ~ #subjects4:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh + 69.5vh + 66.5vh);
+}
+#subjects1:checked ~ #subjects2:checked ~ #subjects3:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh + 69.5vh + 58vh);
+}
+#subjects1:checked ~ #subjects2:checked ~ #subjects4:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh + 66.5vh + 58vh);
+}
+#subjects1:checked ~ #subjects3:checked ~ #subjects4:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 69.5vh + 58vh + 66.5vh);
+}
+#subjects2:checked ~ #subjects3:checked ~ #subjects4:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 58vh + 69.5vh + 66.5vh);
+}
+#subjects1:checked ~ #subjects2:checked ~ #subjects3:checked ~ #subjects4:checked ~ #subjects5:checked ~ .sidebar{
+    height: calc(183.5vh + 66.5vh + 66.5vh + 69.5vh + 66.5vh + 58vh);
+}
+/*End of Sizing for Degree*/
+#sizeoffce{
+    display: none;
+}
+#sizeoffce:not(:checked) ~ .sidebar{
+    height: 228vh;
 }
