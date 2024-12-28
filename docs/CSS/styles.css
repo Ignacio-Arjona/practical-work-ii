@@ -285,6 +285,26 @@ html::-webkit-scrollbar{
     margin-left: 2vh;
     margin-right: 2vh;
 }
+.main-box b a{
+    color: black;
+    text-decoration: underline;
+    
+}
+.main-box b a:hover{
+    color: black;
+    text-decoration: underline;
+    opacity: 50%;
+    transition: 0.3s;
+}
+.content-box .box h3 a{
+    text-decoration: underline;
+        transition: 0.3s;
+
+}
+.content-box .box h3 a:hover{
+    opacity: 50%;
+    transition: 0.3s;
+}
 .heading{
     width: calc(81vw - 5vh);
     border: transparent;
@@ -519,7 +539,7 @@ html::-webkit-scrollbar{
     display: none;
 }
 #sizeoffce:not(:checked) ~ .sidebar{
-    height: 224.5vh;
+    height: 318.5vh;
 }
 .social-media{
     display: flex;
@@ -551,11 +571,16 @@ html::-webkit-scrollbar{
     display: none;
 }
 #sizeofabout:not(:checked) ~ .sidebar{
-    height: 347vh;
+    height: 405vh;
 }
 #sizeoftopic{
     display: none;
 }
 #sizeoftopic:not(:checked) ~ .sidebar{
-    height: 331vh;
+    height: 490.5vh;
+}
+object{
+    width: calc(81vw - 10vh);
+    height: calc(20.25vw - 2.5vh);
+    margin-top: 2.5vh;
 }
