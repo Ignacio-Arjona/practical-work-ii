@@ -507,11 +507,17 @@ html::-webkit-scrollbar{
     height: calc(183.5vh + 66.5vh + 66.5vh + 69.5vh + 66.5vh + 58vh);
 }
 /*End of Sizing for Degree*/
+#sizeofindex{
+    display: none;
+}
+#sizeofindex:not(:checked) ~ .sidebar{
+    height: 101.5vh;
+}
 #sizeoffce{
     display: none;
 }
 #sizeoffce:not(:checked) ~ .sidebar{
-    height: 228vh;
+    height: 224.5vh;
 }
 .social-media{
     display: flex;
@@ -544,4 +550,10 @@ html::-webkit-scrollbar{
 }
 #sizeofabout:not(:checked) ~ .sidebar{
     height: 347vh;
+}
+#sizeoftopic{
+    display: none;
+}
+#sizeoftopic:not(:checked) ~ .sidebar{
+    height: 331vh;
 }
